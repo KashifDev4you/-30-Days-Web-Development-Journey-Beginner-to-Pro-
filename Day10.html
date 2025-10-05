@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 — CSS Selectors</title>
+  <style>
+    /* Element Selector */
+    p {
+      color: blue;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* ID Selector */
+    #main {
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    /* Universal Selector */
+    * {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Grouping Selector */
+    h1, h2, h3 {
+      color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selectors Example</h1>
+  <h2>Understanding How They Work</h2>
+
+  <div id="main">
+    <p>This paragraph is styled using the <b>element selector</b>.</p>
+    <p class="highlight">This one has a <b>class selector</b> applied!</p>
+  </div>
+</body>
+</html>
