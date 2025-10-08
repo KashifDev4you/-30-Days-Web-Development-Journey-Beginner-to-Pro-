@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 12 — CSS Text & Fonts</title>
+
+  <style>
+    /* 🎨 Body styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif; /* Sets the main font */
+      background-color: #f7f9fc; /* Light background */
+      color: #333; /* Default text color */
+      line-height: 1.6; /* Spacing between lines */
+      margin: 40px;
+    }
+
+    /* 🧱 Headings styling */
+    h1, h2 {
+      text-align: center; /* Centers headings */
+      color: #1e88e5; /* Blue color for headings */
+    }
+
+    /* ✍️ Paragraph styling */
+    p {
+      font-size: 18px; /* Controls text size */
+      color: #444; /* Slightly lighter text */
+      text-align: justify; /* Makes text even on both sides */
+      letter-spacing: 0.5px; /* Space between letters */
+      word-spacing: 2px; /* Space between words */
+      text-indent: 30px; /* Indents first line of paragraph */
+    }
+
+    /* 🔤 Text transformation examples */
+    .uppercase {
+      text-transform: uppercase; /* Makes text all UPPERCASE */
+    }
+
+    .capitalize {
+      text-transform: capitalize; /* Capitalizes first letter of each word */
+    }
+
+    .underline {
+      text-decoration: underline; /* Adds underline */
+    }
+
+    .italic {
+      font-style: italic; /* Makes text italic */
+    }
+
+    /* 🌈 Using Google Fonts (optional example) */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    .fancy {
+      font-family: 'Poppins', sans-serif; /* Changes font to imported one */
+      color: #e91e63; /* Pink text color */
+      font-weight: 600; /* Bold style */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Adds soft shadow */
+    }
+
+    /* 🔧 Styling a quote */
+    blockquote {
+      font-style: italic;
+      background: #e3f2fd;
+      padding: 15px 25px;
+      border-left: 5px solid #2196f3;
+      margin: 30px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Day 12 — CSS Text & Fonts</h1>
+  <h2>Mastering Text Styling</h2>
+
+  <p>Text in web design is more than just words — it’s about readability and aesthetics. With CSS, you can control how text appears, feels, and interacts with your layout.</p>
+
+  <p class="uppercase">this text is transformed into uppercase using css.</p>
+  <p class="capitalize">this sentence will have each word capitalized automatically.</p>
+  <p class="underline italic">this line is both underlined and italicized.</p>
+  <p class="fancy">this text uses the google font "poppins" and has a soft shadow.</p>
+
+  <blockquote>
+    "Good design is as little design as possible." — Dieter Rams
+  </blockquote>
+
+</body>
+</html>
