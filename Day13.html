@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 13 — CSS Box Model</title>
+
+  <style>
+    /* 🎨 Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f6fc;
+      margin: 40px;
+    }
+
+    /* 🧱 Box container styling */
+    .box {
+      background-color: #e3f2fd; /* Light blue box background */
+      border: 5px solid #1e88e5; /* Blue border around box */
+      padding: 20px; /* Space inside the box (between content & border) */
+      margin: 30px; /* Space outside the box (between this box & others) */
+      width: 300px; /* Box width */
+    }
+
+    /* 📏 Example boxes with different spacing */
+    .box1 {
+      padding: 10px;
+      margin: 10px;
+      border: 3px solid #4caf50; /* Green border */
+    }
+
+    .box2 {
+      padding: 30px;
+      margin: 40px;
+      border: 6px dashed #f44336; /* Red dashed border */
+      background-color: #ffe0e0;
+    }
+
+    .box3 {
+      padding: 50px;
+      margin: 20px;
+      border: 8px double #9c27b0; /* Purple double border */
+      background-color: #f3e5f5;
+    }
+
+    /* ✍️ Adding a title style */
+    h1 {
+      text-align: center;
+      color: #1e88e5;
+    }
+
+    p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Day 13 — CSS Box Model</h1>
+
+  <p>The Box Model in CSS defines how space is used around and inside elements. It’s made of four main parts: <b>content, padding, border,</b> and <b>margin.</b></p>
+
+  <!-- 🔹 Example 1 -->
+  <div class="box box1">
+    <p>This box has small padding and margin.</p>
+  </div>
+
+  <!-- 🔹 Example 2 -->
+  <div class="box box2">
+    <p>This box has more padding and margin, plus a dashed red border.</p>
+  </div>
+
+  <!-- 🔹 Example 3 -->
+  <div class="box box3">
+    <p>This box has thick double borders and large padding.</p>
+  </div>
+
+</body>
+</html>
