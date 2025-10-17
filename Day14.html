@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 14 — CSS Display & Position</title>
+
+  <style>
+    /* 🌈 Basic page styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fc;
+      margin: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e88e5;
+    }
+
+    /* 🧩 BLOCK elements — take full width */
+    .block-example {
+      display: block; /* Default for divs */
+      background: #e3f2fd;
+      border: 2px solid #1e88e5;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    /* 🧱 INLINE elements — only take as much width as needed */
+    .inline-example span {
+      display: inline;
+      background: #c8e6c9;
+      border: 1px solid #4caf50;
+      padding: 5px;
+      margin-right: 5px;
+    }
+
+    /* 🧭 INLINE-BLOCK — acts inline but supports width/height */
+    .inline-block-example div {
+      display: inline-block;
+      background: #fff9c4;
+      border: 2px solid #fbc02d;
+      width: 120px;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      margin-right: 10px;
+    }
+
+    /* 🧩 FLEX container */
+    .flex-container {
+      display: flex; /* Enables Flexbox */
+      justify-content: space-around; /* Evenly spaces items */
+      align-items: center; /* Centers vertically */
+      background: #bbdefb;
+      padding: 20px;
+      border: 2px dashed #1565c0;
+    }
+
+    .flex-container div {
+      background: #1e88e5;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* 🎯 POSITIONING examples */
+    .position-container {
+      position: relative; /* Acts as parent for absolute positioning */
+      background: #fce4ec;
+      padding: 40px;
+      margin-top: 40px;
+      border: 2px solid #e91e63;
+    }
+
+    .absolute-box {
+      position: absolute; /* Positioned relative to parent */
+      top: 10px;
+      right: 20px;
+      background: #e91e63;
+      color: white;
+      padding: 10px;
+    }
+
+    .relative-box {
+      position: relative; /* Moves based on normal position */
+      top: 20px;
+      left: 30px;
+      background: #f48fb1;
+      padding: 10px;
+      color: #fff;
+    }
+
+    .fixed-box {
+      position: fixed; /* Stays in same place when scrolling */
+      bottom: 20px;
+      right: 20px;
+      background: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+
+    .sticky-header {
+      position: sticky; /* Sticks to top when scrolling */
+      top: 0;
+      background: #2196f3;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Day 14 — CSS Display & Position</h1>
+
+  <div class="sticky-header">Sticky Header — stays visible while scrolling</div>
+
+  <h2>1️⃣ Display: Block</h2>
+  <div class="block-example">This is a block element (takes full width)</div>
+  <div class="block-example">Another block element below it</div>
+
+  <h2>2️⃣ Display: Inline</h2>
+  <div class="inline-example">
+    <span>Inline 1</span>
+    <span>Inline 2</span>
+    <span>Inline 3</span>
+  </div>
+
+  <h2>3️⃣ Display: Inline-block</h2>
+  <div class="inline-block-example">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+  </div>
+
+  <h2>4️⃣ Display: Flexbox</h2>
+  <div class="flex-container">
+    <div>Home</div>
+    <div>About</div>
+    <div>Contact</div>
+  </div>
+
+  <h2>5️⃣ Positioning</h2>
+  <div class="position-container">
+    <p>Parent Container (position: relative)</p>
+    <div class="absolute-box">Absolute</div>
+    <div class="relative-box">Relative</div>
+  </div>
+
+  <div class="fixed-box">I’m fixed — always visible!</div>
+</body>
+</html>
