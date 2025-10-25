@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 15 — CSS Flexbox</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      margin: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e88e5;
+    }
+
+    /* 🧱 Flex Container */
+    .flex-container {
+      display: flex; /* Enables flexbox layout */
+      border: 3px solid #2196f3;
+      background: #e3f2fd;
+      padding: 20px;
+      margin: 30px 0;
+      justify-content: space-around; /* Distributes items evenly */
+      align-items: center; /* Aligns items vertically */
+      flex-wrap: wrap; /* Allows items to move to next line */
+    }
+
+    /* 📦 Flex Items */
+    .item {
+      background-color: #64b5f6;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      width: 120px;
+      height: 100px;
+      line-height: 100px;
+      border-radius: 8px;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+
+    /* 🎨 Hover effect */
+    .item:hover {
+      background-color: #1e88e5;
+      transform: scale(1.05);
+    }
+
+    /* 🔁 Flex Direction examples */
+    .row {
+      flex-direction: row; /* Default - horizontal */
+    }
+
+    .column {
+      flex-direction: column; /* Vertical alignment */
+      height: 400px;
+    }
+
+    /* ⚖️ Alignment examples */
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .center {
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Day 15 — CSS Flexbox</h1>
+
+  <h2>1️⃣ Basic Flexbox Layout</h2>
+  <div class="flex-container row">
+    <div class="item">Box 1</div>
+    <div class="item">Box 2</div>
+    <div class="item">Box 3</div>
+  </div>
+
+  <h2>2️⃣ Column Direction</h2>
+  <div class="flex-container column">
+    <div class="item">Item A</div>
+    <div class="item">Item B</div>
+    <div class="item">Item C</div>
+  </div>
+
+  <h2>3️⃣ Justify Content — Space Between</h2>
+  <div class="flex-container space-between">
+    <div class="item">Left</div>
+    <div class="item">Center</div>
+    <div class="item">Right</div>
+  </div>
+
+  <h2>4️⃣ Center Everything!</h2>
+  <div class="flex-container center" style="height: 250px;">
+    <div class="item">Perfectly Centered</div>
+  </div>
+
+</body>
+</html>
