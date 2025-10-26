@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 16 — JavaScript Introduction</title>
+</head>
+<body>
+  <h1>Welcome to JavaScript 🚀</h1>
+  <p id="message">Click the button below to see some magic!</p>
+
+  <button onclick="showMessage()">Click Me!</button>
+
+  <script>
+    // This is a comment — JS ignores this line
+    // Function to change the text inside the paragraph
+    function showMessage() {
+      document.getElementById("message").innerHTML = "🎉 You just ran JavaScript!";
+      alert("Hello, Developer! 👋"); // Shows a popup message
+      console.log("Button clicked!"); // Logs info in browser console
+    }
+  </script>
+</body>
+</html>
